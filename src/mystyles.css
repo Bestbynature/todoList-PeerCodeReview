@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, rgba(194, 128, 48, 0.8), rgb(255, 228, 196), rgba(194, 128, 48, 0.8));
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  height: auto;
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding: 3rem 1rem 3rem 1rem;
+  width: 50%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem 1rem 1rem 0.5rem;
+  color: rgba(56, 53, 53, 0.9);
+}
+
+.todo {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.todo:focus {
+  border: none;
+  outline: none;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+.task-pane {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+}
+
+.top-left {
+  flex-basis: 95%;
+  display: flex;
+  padding: 0.4rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.top-left:hover {
+  box-shadow: 0 0 3px 3px;
+}
+
+.top-right {
+  flex-basis: 5%;
+  text-align: center;
+  cursor: move;
+}
+
+.left-right {
+  display: flex;
+  align-items: center;
+}
+
+.all-activities {
+  width: 100%;
+  border: 2px solid white;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 100%;
+}
+
+.description {
+  flex-basis: 93%;
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+
+.check {
+  margin-right: 0.7rem;
+  flex-basis: 7%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.fa-ellipsis-vertical {
+  color: rgb(252, 143, 0);
+}
+
+.fa-ellipsis-vertical:hover {
+  color: rgb(15, 15, 14);
+}
+
+.fa-trash-can {
+  cursor: pointer;
+  display: none;
+  margin-left: 10px;
+}
+
+.clear {
+  background-color: rgba(43, 43, 40, 0.5);
+  padding: 1.2rem;
+  text-align: center;
+  color: rgb(243, 240, 240);
+  transition: all 0.5s ease-in-out;
+}
+
+.clear:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 3px white;
+  filter: invert(100%);
+}
+
+.fa-beat {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.abnormal {
+  display: none;
+  background-color: white;
+  color: red;
+  padding: 0.5rem;
+}
+
+.dark {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+}
